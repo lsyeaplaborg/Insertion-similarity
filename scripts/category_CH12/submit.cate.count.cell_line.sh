@@ -22,8 +22,9 @@ do
 base_name=`basename $line`
 sample=${base_name%_Uinskedu.*}
 sh $scriptdir/pipeline.cate.count.cell_line.sh $line $output_dir $scriptdir $ref_fa $uinsdir/${sample}_Uins2.txt >$output_dir/pipeline.count.${sample}.out
-python $scriptdir/similarity_score_ins_ref_neighbor.py $output_dir $output_dir $ref_fa $file_suffix
 done
+
+python $scriptdir/similarity_score_ins_ref_neighbor.py $output_dir $output_dir $ref_fa $file_suffix
 
 ### copy final results to a new folder
 mkdir -p ${output_dir}/final_res

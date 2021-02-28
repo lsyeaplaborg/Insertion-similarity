@@ -10,8 +10,8 @@ import re
 import sys
 # In[92]:
 #%%
-data_dir=sys.argv[1] # python script
-out_dir=sys.argv[2] # first argument
+data_dir=sys.argv[1] 
+out_dir=sys.argv[2] 
 ref_fa=sys.argv[3]
 file_suffix=sys.argv[4]
 #%%
