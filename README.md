@@ -21,7 +21,7 @@
 
 ## Getting Started
 
-### Specify the input, output, scripts and reference path in the **submit.count.sh** (mouse) and **submit.cate.count.cell_line.sh** (cell line) and **submit.cate.count.no_12d.sh** file
+### Specify the input, output, scripts and reference path in the `submit.count.sh` (mouse) and`submit.cate.count.cell_line.sh` (cell line) and `submit.cate.count.no_12d.sh` file
 
 ### Run pipeline with command line:
 
