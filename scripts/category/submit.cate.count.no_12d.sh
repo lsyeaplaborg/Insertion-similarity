@@ -1,9 +1,9 @@
-uninkdudir="/Volumes/Elements/handover_code/Insertion-similarity/data/new_no_12d/uninskedu"
-uinsdir="/Volumes/Elements/handover_code/Insertion-similarity/data/new_no_12d/unins"
-output_dir="/Volumes/Elements/handover_code/Insertion-similarity/results/no_12d"
-scriptdir='/Volumes/Elements/handover_code/Insertion-similarity/scripts/category'
+uninkdudir="/Volumes/Elements/haoqian/micro_homology/all_conditions_200717/data/20210125/x083/x083_Uinskedu"
+uinsdir="/Volumes/Elements/haoqian/micro_homology/all_conditions_200717/data/20210125/x083/x083_Uins"
+output_dir="/Volumes/Elements/haoqian/micro_homology/all_conditions_200717/results/x083_202101/ins_classfication/results"
+scriptdir='/Volumes/Elements/haoqian/duplicate_insertion/duplicate_insertion_pipeline/scripts/category'
 ref_fa="/Volumes/Elements/haoqian/duplicate_insertion/duplicate_insertion_pipeline/data/reference/VB18_F3_short.fa"
-file_suffix='_no12dkedup.txt'
+file_suffix="_kedup.txt"
 
 ### create output dir if it not exist 
 if [ ! -d $output_dir ];then
@@ -21,7 +21,7 @@ cat $samplename|while read line
 do
 base_name=`basename $line`
 sample=${base_name%_Uinskedu.*}
-sh $scriptdir/pipeline.count.sh $line $output_dir $scriptdir $ref_fa $uinsdir/${sample}_Uins2.txt >$output_dir/pipeline.count.${sample}.out
+sh $scriptdir/pipeline.count.sh $line $output_dir $scriptdir $ref_fa $uinsdir/${sample}_Uins2.txt > $output_dir/pipeline.count.${sample}.out
 done
 
 python $scriptdir/similarity_score_ins_ref_neighbor.py $output_dir $output_dir $ref_fa $file_suffix
