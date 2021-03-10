@@ -1,9 +1,9 @@
-uninkdudir="/Volumes/Elements/haoqian/micro_homology/all_conditions_200717/data/20210125/x083/x083_Uinskedu"
-uinsdir="/Volumes/Elements/haoqian/micro_homology/all_conditions_200717/data/20210125/x083/x083_Uins"
-output_dir="/Volumes/Elements/haoqian/micro_homology/all_conditions_200717/results/x083_202101/ins_classfication/results"
+uninkdudir="/Volumes/Elements/handover_code/Insertion-similarity/data/new_no_12d/uninskedu"
+uinsdir="/Volumes/Elements/handover_code/Insertion-similarity/data/new_no_12d/unins"
+output_dir="/Volumes/Elements/handover_code/Insertion-similarity/results/no_12d"
 scriptdir='/Volumes/Elements/haoqian/duplicate_insertion/duplicate_insertion_pipeline/scripts/category'
 ref_fa="/Volumes/Elements/haoqian/duplicate_insertion/duplicate_insertion_pipeline/data/reference/VB18_F3_short.fa"
-file_suffix="_kedup.txt"
+file_suffix="no12D_kedup.txt"
 
 ### create output dir if it not exist 
 if [ ! -d $output_dir ];then
